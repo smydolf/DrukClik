@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B1C6B48-F541-42A0-97F4-584233C0CD23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DrukClik.Data</RootNamespace>
+    <AssemblyName>DrukClik.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormEntity.cs" />
+    <Compile Include="GmailSmtpAuth.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Migrations\201607162153387_InitMigration.cs" />
+    <Compile Include="Migrations\201607162153387_InitMigration.Designer.cs">
+      <DependentUpon>201607162153387_InitMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607171017022_AddActivePropertiesToPizzaPortalCode.cs" />
+    <Compile Include="Migrations\201607171017022_AddActivePropertiesToPizzaPortalCode.Designer.cs">
+      <DependentUpon>201607171017022_AddActivePropertiesToPizzaPortalCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607171527510_AddGmailAuthTable.cs" />
+    <Compile Include="Migrations\201607171527510_AddGmailAuthTable.Designer.cs">
+      <DependentUpon>201607171527510_AddGmailAuthTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607171529179_AddGmailAuthTable1.cs" />
+    <Compile Include="Migrations\201607171529179_AddGmailAuthTable1.Designer.cs">
+      <DependentUpon>201607171529179_AddGmailAuthTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607171531477_AddGmailAuthTable2.cs" />
+    <Compile Include="Migrations\201607171531477_AddGmailAuthTable2.Designer.cs">
+      <DependentUpon>201607171531477_AddGmailAuthTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607172029111_AddDoubledForm.cs" />
+    <Compile Include="Migrations\201607172029111_AddDoubledForm.Designer.cs">
+      <DependentUpon>201607172029111_AddDoubledForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607172139414_AddSendEmailError.cs" />
+    <Compile Include="Migrations\201607172139414_AddSendEmailError.Designer.cs">
+      <DependentUpon>201607172139414_AddSendEmailError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607172152268_DeleteSendEmailErrorErrorMessage.cs" />
+    <Compile Include="Migrations\201607172152268_DeleteSendEmailErrorErrorMessage.Designer.cs">
+      <DependentUpon>201607172152268_DeleteSendEmailErrorErrorMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PizzaPortalCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AplicationContext.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="SendCodeLog.cs" />
+    <Compile Include="SendEmailError.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607162153387_InitMigration.resx">
+      <DependentUpon>201607162153387_InitMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607171017022_AddActivePropertiesToPizzaPortalCode.resx">
+      <DependentUpon>201607171017022_AddActivePropertiesToPizzaPortalCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607171527510_AddGmailAuthTable.resx">
+      <DependentUpon>201607171527510_AddGmailAuthTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607171529179_AddGmailAuthTable1.resx">
+      <DependentUpon>201607171529179_AddGmailAuthTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607171531477_AddGmailAuthTable2.resx">
+      <DependentUpon>201607171531477_AddGmailAuthTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607172029111_AddDoubledForm.resx">
+      <DependentUpon>201607172029111_AddDoubledForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607172139414_AddSendEmailError.resx">
+      <DependentUpon>201607172139414_AddSendEmailError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607172152268_DeleteSendEmailErrorErrorMessage.resx">
+      <DependentUpon>201607172152268_DeleteSendEmailErrorErrorMessage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

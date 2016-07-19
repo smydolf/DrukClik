@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrukClik", "DrukClik\DrukClik.csproj", "{5FF1E724-DB09-43D0-B6A9-4D35F0B47906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrukClik.Data", "DrukClik.Data\DrukClik.Data.csproj", "{8B1C6B48-F541-42A0-97F4-584233C0CD23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF1E724-DB09-43D0-B6A9-4D35F0B47906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF1E724-DB09-43D0-B6A9-4D35F0B47906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF1E724-DB09-43D0-B6A9-4D35F0B47906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF1E724-DB09-43D0-B6A9-4D35F0B47906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1C6B48-F541-42A0-97F4-584233C0CD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1C6B48-F541-42A0-97F4-584233C0CD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1C6B48-F541-42A0-97F4-584233C0CD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1C6B48-F541-42A0-97F4-584233C0CD23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
